@@ -1,38 +1,51 @@
 package top150.array
 
+/**
+ * 151. Reverse Words in a String
+ * Time: O(n)
+ * Space: O(1)
+ */
 class ReverseWordsInString {
     fun reverseWords(s: String): String {
-        val chars = s.toCharArray()
-        reverse(chars, 0, chars.size - 1)
-        var start = 0
-        var end = 0
-        var index = 0
+        val charArray = s.toCharArray()
+        reverse(charArray, 0, charArray.size - 1)
 
-        while (end < chars.size) {
-            while (end < chars.size && chars[end] != ' ') {
-                end++
+        var wordStart = 0
+        var wordEnd = 0
+        var resultIndex = 0
+
+        while (wordEnd < charArray.size) {
+            while (wordEnd < charArray.size && charArray[wordEnd] != ' ') {
+                wordEnd++
             }
-            reverse(chars, start, end - 1)
-            if (start < end) {
-                if (index > 0) chars[index++] = ' '
-                for (i in start..<end) chars[index++] = chars[i]
+            reverse(charArray, wordStart, wordEnd - 1)
+
+            if (wordStart < wordEnd) {
+                if (resultIndex > 0) {
+                    charArray[resultIndex] = ' '
+                    resultIndex++
+                }
+                for (i in wordStart until wordEnd) {
+                    charArray[resultIndex] = charArray[i]
+                    resultIndex++
+                }
             }
-            end++
-            start = end
+            wordEnd++
+            wordStart = wordEnd
         }
 
-        return String(chars, 0, index)
+        return String(charArray, 0, resultIndex)
     }
 
-    private fun reverse(chars: CharArray, start: Int, end: Int) {
-        var l = start
-        var r = end
-        while (l < r) {
-            val temp = chars[l]
-            chars[l] = chars[r]
-            chars[r] = temp
-            l++
-            r--
+    private fun reverse(array: CharArray, start: Int, end: Int) {
+        var left = start
+        var right = end
+        while (left < right) {
+            val temp = array[left]
+            array[left] = array[right]
+            array[right] = temp
+            left++
+            right--
         }
     }
 }
