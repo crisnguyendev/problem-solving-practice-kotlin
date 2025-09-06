@@ -8,7 +8,7 @@ class FindLongestSubstringContainingVowelsInEvenCounts {
     fun findTheLongestSubstring(s: String): Int {
         val vowelToBit = mapOf('a' to 0, 'e' to 1, 'i' to 2, 'o' to 3, 'u' to 4)
         val seen = HashMap<Int, Int>()
-        seen[0] = -1 // Empty prefix has even counts
+        seen[0] = -1
         var mask = 0
         var maxLength = 0
 
