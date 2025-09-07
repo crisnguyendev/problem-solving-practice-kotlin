@@ -1,4 +1,4 @@
-package dsa.twopointer
+package topic.twopointer
 
 /**
  * 2444. Count Subarrays With Fixed Bounds

@@ -1,4 +1,4 @@
-package dsa.bitwise
+package topic.bitwise
 
 /**
  * 389. Find the Difference

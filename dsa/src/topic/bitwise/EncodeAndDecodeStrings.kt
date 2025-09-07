@@ -1,4 +1,4 @@
-package dsa.bitwise
+package topic.bitwise
 
 /**
  * 271. Encode and Decode Strings

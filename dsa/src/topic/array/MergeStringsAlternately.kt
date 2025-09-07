@@ -1,4 +1,4 @@
-package dsa.array
+package topic.array
 
 class MergeStringsAlternately {
     fun mergeAlternately(word1: String, word2: String): String {

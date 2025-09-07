@@ -1,4 +1,4 @@
-package dsa.bitwise
+package topic.bitwise
 
 /**
  * 2802. Find The K-th Lucky Number
