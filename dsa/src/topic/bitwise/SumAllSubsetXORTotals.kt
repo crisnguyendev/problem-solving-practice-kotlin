@@ -1,4 +1,4 @@
-package dsa.bitwise
+package topic.bitwise
 
 /**
  * 1863. Sum of All Subset XOR Totals

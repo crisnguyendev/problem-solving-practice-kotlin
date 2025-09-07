@@ -1,4 +1,4 @@
-package dsa.bitwise
+package topic.bitwise
 
 /**
  * 995. Minimum Number of K Consecutive Bit Flips

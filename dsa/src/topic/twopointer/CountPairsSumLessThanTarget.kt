@@ -1,4 +1,4 @@
-package dsa.twopointer
+package topic.twopointer
 
 /**
  * 2824. Count Pairs Whose Sum is Less than Target

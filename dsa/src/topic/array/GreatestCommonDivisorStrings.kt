@@ -1,4 +1,4 @@
-package dsa.array
+package topic.array
 
 import kotlin.math.abs
 
